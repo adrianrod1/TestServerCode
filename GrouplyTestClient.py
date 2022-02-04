@@ -9,7 +9,7 @@ import requests
 
   
 # api-endpoint
-URL = "https://192.168.1.236:61617/CreateNewProfile"
+URL = "https://127.0.0.1:61617/CreateNewProfile"
   
 # # location given here
 # location = "delhi technological university"
@@ -21,7 +21,7 @@ userRequest =  '{"request": "CreateNewProfile", "id": "01","FirstName": "Adrian"
   
 # sending get request and saving the response as response object
 try: 
-    ploads = {'things':2,'total':"25", 'test':5}
+    ploads = {'iddd':1,'firstname':'Adrian', 'lastname':'Rodriguez', 'username':'adrian_rod'}
     r = requests.post(url = URL, params=ploads, verify=False)
     # extracting data in json format
    # data = r .json()
